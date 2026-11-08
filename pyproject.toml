@@ -1,0 +1,17 @@
+[project]
+name = "listing-copy-agent"
+version = "0.1.0"
+description = "Batch product copy generation for e-shops with validation and cache"
+requires-python = ">=3.9"
+authors = [{ name = "Maksym Kovalevskyi" }]
+license = { text = "MIT" }
+
+[project.scripts]
+listing-copy = "listing_copy.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
